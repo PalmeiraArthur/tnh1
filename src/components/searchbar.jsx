@@ -1,18 +1,23 @@
-import React from 'react'
+import icons from "./icons";
 
-import { FaSearch } from 'react-icons/fa'
-const SearchBar = () => {
-  return (
-    <div className='m-2 text-white' id='Search Bar'>
-        <label><button><FaSearch color='bejeTNH1'/></button></label>
-        <input
+function Searchbar() {
+    return (
+        <div className="relative w-[195px] h-[40px]  xl:w-[450px]">
+            <input
+                type="text"
+                placeholder="Pesquisar..."
+                className="w-full h-full pl-10 pr-4 bg-cinzaClaroTNH1 rounded outline-none"
+            />
+            <div className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500">
+                <icons.SearchIcon />
+            </div>
 
-            type="text"
-            className='w-[400px] h-[50px] bg-cinzaClaroTNH1 border-2 border-cinzaClaroTNH1 rounded-md px-4 focus:outline-none'
-            placeholder='Pesuisar...'
-        />
-    </div>
-  )
+            <div className="absolute right-1 top-1/2 -translate-y-1/2 text-gray-500">
+                <icons.MicIcon />
+            </div>
+            
+        </div>
+    );
 }
 
-export default SearchBar
+export default Searchbar;
