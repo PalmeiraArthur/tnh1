@@ -1,7 +1,7 @@
 import React from "react";
 import MenuDropdown from "./menuDropdown";
-import Searchbar from "./searchbar";
 import Hamburgermenu from "./hamburguerMenu";
+import Searchbar from "./searchBar";
 
 
 
@@ -15,6 +15,7 @@ function Navbar() {
                 </svg>
 
                 <Searchbar></Searchbar>
+
 
                 <div className="block xl:hidden">
                     <Hamburgermenu></Hamburgermenu>
