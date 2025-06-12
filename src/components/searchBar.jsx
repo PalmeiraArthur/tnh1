@@ -1,17 +1,22 @@
+import { Box, Input, InputGroup } from '@chakra-ui/react'
 import React from 'react'
 
-import { FaSearch } from 'react-icons/fa'
+import { FaMicrophone, FaSearch } from 'react-icons/fa'
 const SearchBar = () => {
   return (
-    <div className='m-2 text-white' id='Search Bar'>
-        <label><button><FaSearch color='bejeTNH1'/></button></label>
-        <input
-
-            type="text"
-            className='w-[400px] h-[50px] bg-cinzaClaroTNH1 border-2 border-cinzaClaroTNH1 rounded-md px-4 focus:outline-none'
-            placeholder='Pesuisar...'
+    <Box m={2}>
+        <InputGroup 
+            startElement={<FaSearch color='#F7EDE2' onClick={() => console.log('pesquisar...')} />}
+            endElement={<FaMicrophone color='#F7EDE2' onClick={() => console.log('ativando pesquisa por voz...')} cursor={'pointer'}/>}
+        >
+        <Input
+            placeholder='Pesquisar...'
+            bgColor={'#373737'}
+            size={'sm'}
+            boxShadow={'sm'}
         />
-    </div>
+        </InputGroup>
+    </Box>
   )
 }
 
