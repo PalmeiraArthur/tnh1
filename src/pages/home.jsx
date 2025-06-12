@@ -1,16 +1,19 @@
 import React from "react";
 import Navbar from "../components/navbar";
 
+
 function Home(){
 
     return(
-        <div>
+        <div >
             <Navbar></Navbar>
-            <h1 className="bg-orange-400 text-orange-700">
-            
-                SAMUEL
+            <div className="xl:mx-[330px] bg-begeTNH1 h-screen bg-opacity-5">
 
-            </h1>
+                
+
+            </div>
+            
+        
         </div>
 
     );
