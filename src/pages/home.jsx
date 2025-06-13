@@ -39,12 +39,15 @@ function Home() {
     },
     { id: 6, title: "Notícia extra para mostrar +5", link: "#" },
     { id: 7, title: "Outra notícia adicional.", link: "#" },
+    { id: 8, title: "Outra notícia adicional.", link: "#" },
+    { id: 9, title: "Outra notícia adicional.", link: "#" },
+    { id: 10, title: "Outra notícia adicional.", link: "#" },
   ];
 
   return (
     <div>
       <Navbar></Navbar>
-      <div className="bg-begeTNH1 w-max h-full bg-opacity-5 py-[130px] xl:grid xl:grid-flow-col xl:grid-rows-2 xl:gap-[20px] mx-auto">
+      <div className="bg-begeTNH1 w-max h-full bg-opacity-5 py-[130px] xl:grid xl:grid-flow-col xl:grid-rows-2 xl:gap-[20px] mx-auto p-5">
         <div>
           <CarrosselNoticias></CarrosselNoticias>
         </div>
