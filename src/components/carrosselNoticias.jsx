@@ -12,7 +12,7 @@ function CarrosselNoticias() {
   ];
 
   return (
-    <div className="w-[980px] h-[600px]">
+    <div className=" w-[313px] h-[287px] xl:w-[980px] xl:h-[600px]">
       <Splide
         options={{
           type: 'loop',

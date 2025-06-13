@@ -18,7 +18,7 @@ function MenuDropdown() {
                     </MenuButton>
 
 
-                    <MenuItems className="mt-[10px] h-[auto] w-[160px] focus:outline-none bg-cinzaClaroTNH1 rounded text-center shadow-[0px_0px_7px_1px_rgba(0,_0,_0,_0.3)]" anchor="bottom end">
+                    <MenuItems className="z-50 mt-[10px] h-[auto] w-[160px] focus:outline-none bg-cinzaClaroTNH1 rounded text-center shadow-[0px_0px_7px_1px_rgba(0,_0,_0,_0.3)]" anchor="bottom end">
                         <div className='my-[10px] flex flex-col gap-[5px]'>
                             <MenuItem>
                                 <a className="flex items-center gap-[15px] font-medium hover:bg-hover cursor-pointer py-[7px] rounded mx-[5px] transition-all">
