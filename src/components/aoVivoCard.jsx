@@ -1,44 +1,37 @@
-import React, { useState } from "react";
-import logo_tv_paju from "../assets/imgs/RADIOPAJUCARA103_.png";
-import { BsBroadcast } from "react-icons/bs";
+import { useState } from "react";
+import logoTvPajucara from "../assets/logo_tv_pajucara_horizontal.png";
+import icons from "./icons";
 
-const AoVivoCard = ({ onClick }) => {
-  const [active, setActive] = useState(false);
+function AoVivoCard() {
+  const [isLive, setIsLive] = useState(true); // Estado para controlar se está ao vivo
 
-  const handleOnLive = () => {
-    setActive((prev) => !prev);
-    if (onClick) onClick();
+  const handleToggleLive = () => {
+    setIsLive((prev) => !prev);
   };
 
   return (
-    <button
-      onClick={handleOnLive}
-      className="w-full max-w-xs mx-auto flex flex-col items-center bg-begeTNH1 rounded shadow-lg transition transform hover:scale-105 focus:outline-none"
-      style={{ minHeight: "60px", maxWidth: "220px" }}
-    >
-      <div className="bg-begeTNH1 rounded mb-2">
-        <img
-          src={logo_tv_paju}
-          alt="logo tv pajuçara"
-          className="object-contain"
-        />
+    <div>
+      <div className="h-[58x] w-[100px] xl:h-[65px] xl:w-[155px] bg-begeTNH1 flex justify-center items-center rounded-t">
+        <img className="h-[50px] w-[140px]" src={logoTvPajucara} alt="Logo TV Pajuçara" />
       </div>
-      <h2
-        className={`flex items-center justify-center text-center text-base font-bold px-4 py-2 rounded-b transition-colors duration-300 w-full
-          ${
-            active
-              ? "bg-vermelhoTNH1 text-begeTNH1"
-              : "bg-cinzaEscuroTNH1 text-cinzaClaroTNH1"
-          }
-        `}
+
+      <button
+        onClick={handleToggleLive}
+        className={`xl:h-[26px] xl:w-[155px] flex justify-center items-center rounded-b gap-[10px] transition-colors duration-300 ${
+          isLive ? "bg-vermelhoTNH1" : "bg-[#5E5E5E]"
+        }`}
       >
-        <span className="mr-2 flex items-center">
-          <BsBroadcast size={18} />
-        </span>{" "}
-        AO VIVO
-      </h2>
-    </button>
+        {isLive ? <icons.LiveIcon /> : <icons.GrayLiveIcon />}
+        <a
+          className={`font-bold ${
+            isLive ? "text-[#F7EDE2]" : "text-[#9C9894]"
+          }`}
+        >
+          AO VIVO
+        </a>
+      </button>
+    </div>
   );
-};
+}
 
 export default AoVivoCard;

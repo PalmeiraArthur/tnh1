@@ -1,28 +1,21 @@
-import React, { useState } from "react";
-import logo_radio_paju from "../assets/imgs/RADIOPAJUCARA103_.png";
+import { Link } from "react-router-dom";
+import radioPajucara from "../assets/RADIOPAJUCARA103_.png";
+import icons from "./icons";
 
-const OuvirCard = ({ onClick }) => {
-
+function OuvirCard() {
   return (
-    <button
-      className="w-full max-w-xs mx-auto flex flex-col items-center bg-begeTNH1 rounded shadow-lg transition transform hover:scale-105 focus:outline-none cursor-pointer"
-      style={{ minHeight: "60px", maxWidth: "220px" }}
-    >
-      <div className="bg-begeTNH1 rounded mb-2">
-        <img
-          src={logo_radio_paju}
-          alt="logo tv pajuçara"
-          className="object-contain"
-        />
+    <div>
+      <div className="h-[58x] w-[100px] xl:h-[65px] xl:w-[155px] bg-begeTNH1 flex justify-center items-center rounded-t">
+        <img className="h-[50px] w-[140px]" src={radioPajucara} alt="Logo TV Pajuçara" />
       </div>
-      <h2
-        className={`flex items-center justify-center text-center text-base font-bold px-4 py-2 rounded-b duration-300 w-full
-        `}
-      >
-        OUVIR
-      </h2>
-    </button>
+
+      <Link to="/Radio">
+        <button className="w-[100px] h-[26px] xl:h-[26px] xl:w-[155px] flex justify-center items-center bg-[#E97A05] rounded-b gap-[10px]">
+          <span className="font-bold text-[12px] xl:text-[16px]">OUVIR AGORA</span>
+        </button>
+      </Link>
+    </div>
   );
-};
+}
 
 export default OuvirCard;
