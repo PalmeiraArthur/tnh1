@@ -16,7 +16,6 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@plugin "daisyui";
 
 
 .transition-all {
