@@ -54,12 +54,10 @@ function Home() {
         <AoVivoCard />
         <OuvirCard />
        </div>
-      <div className=" w-max h-full pt-[130px] xl:grid xl:grid-flow-col xl:grid-rows-2 xl:gap-[20px] mx-auto pb-[20px] ">
-        <div>
+      <div className=" w-max h-full pt-[130px] xl:grid xl:grid-flow-col xl:grid-rows-2 xl:gap-[10px] pb-[20px] ">
           <CarrosselNoticias></CarrosselNoticias>
-        </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] w-full max-w-[980px] mx-auto px-4">
+        <div className="pt-[36px] grid grid-cols-1 xl:grid-cols-3 gap-[20px] w-full max-w-[980px] ">
           <CardNoticia
             title="Noticia"
             img="https://images.unsplash.com/photo-1749576502454-a0fa6ae62a48?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

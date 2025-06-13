@@ -1,36 +1,41 @@
 import { useNavigate } from "react-router-dom";
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css'; // ou '/css/skyblue' para tema diferente
 
 function CarrosselNoticias() {
+  const imagens = [
+    "https://images.unsplash.com/photo-1749576502454-a0fa6ae62a48?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://www.viagensecaminhos.com/wp-content/uploads/2023/12/maceio-praia-de-pajucara.jpg",
+    "https://maceioalgovbr.dhost.cloud/uploads/imagens/26-07-23-Ponta-Verde-Maceio-Orla-Praia-SEMTUR-foto-Jonathan-Lins-7.jpg",
+    "https://uploads.grupodicas.com/2025/03/YHXsRMU2-noite-em-maceio-1-1024x576.webp",
+    "https://www.agaxtur.com.br/portals/6/Images/destinos/Maceio.png",
+  ];
+
   return (
-    <div>
-      <div className="carousel w-[303px] h-[191px] xl:h-[600px] xl:w-[980px]">
-        <div id="item1" className="carousel-item w-full">
-          <img
-            src="https://harus.ind.br/wp-content/uploads/2023/02/5-praias-brasileiras.jpg"
-            className="w-full" />
-        </div>
-        <div id="item2" className="carousel-item w-full">
-          <img
-            src="https://maceioalgovbr.dhost.cloud/uploads/imagens/Caminho-de-Moises-Ponta-Verde-SEMTUR-fotos-Jonathan-Lins-16.jpg"
-            className="w-full" />
-        </div>
-        <div id="item3" className="carousel-item w-full">
-          <img
-            src="https://media.staticontent.com/media/pictures/88836def-639e-414a-83e8-3fcaa3d74fa8"
-            className="w-full" />
-        </div>
-        <div id="item4" className="carousel-item w-full">
-          <img
-            src="https://maceioalgovbr.dhost.cloud/uploads/imagens/06-12-2021-Praia-Ponta-Verde-Turismo-SEMTEL-Foto-Emile-Valoes-3.jpg"
-            className="w-full" />
-        </div>
-      </div>
-      <div className="flex  justify-center gap-2 py-2">
-        <a href="#item1" className="btn btn-xs">1</a>
-        <a href="#item2" className="btn btn-xs">2</a>
-        <a href="#item3" className="btn btn-xs">3</a>
-        <a href="#item4" className="btn btn-xs">4</a>
-      </div>
+    <div className="w-[980px] h-[600px]">
+      <Splide
+        options={{
+          type: 'loop',
+          perPage: 1,
+          autoplay: true,
+          interval: 3000,
+          pauseOnHover: true,
+          arrows: true,
+          pagination: true,
+        }}
+        aria-label="Carrossel de Imagens"
+        style={{ height: '100%' }}
+      >
+        {imagens.map((url, index) => (
+          <SplideSlide key={index}>
+            <img
+              src={url}
+              alt={`Imagem ${index + 1}`}
+              className="w-full h-full object-cover rounded-2xl shadow-md rounded"
+            />
+          </SplideSlide>
+        ))}
+      </Splide>
     </div>
   );
 
