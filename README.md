@@ -21,7 +21,7 @@ Criar uma nova interface para o portal de notícias TNH1, com foco em:
 
 ## 📷 Imagens
 
-![Print Home](https://media.discordapp.net/attachments/1245141513026146334/1383116741642555463/image.png?ex=684d9f58&is=684c4dd8&hm=5dfb2ac22ce8082a5c941d1cbabecc9d563ebdba4647bf08f282a9700db36b37&=&format=webp&quality=lossless&width=1138&height=960)
+![Print Home](https://media.discordapp.net/attachments/1245141513026146334/1383155279222280383/image.png?ex=684dc33c&is=684c71bc&hm=1aec2dcac7aa1ebcc76bb35832e9532f61743b9a38cb5ed1f596783a74fbbd95&=&format=webp&quality=lossless&width=805&height=960)
 
 ![Print Noticia](https://media.discordapp.net/attachments/1245141513026146334/1383116791189868544/image.png?ex=684d9f64&is=684c4de4&hm=fb67ffee905e863d4e9fbd56ab2f95ee61d7e30c6cd1f78ed4753de041381829&=&format=webp&quality=lossless&width=1193&height=960)
 
