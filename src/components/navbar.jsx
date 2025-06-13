@@ -7,7 +7,7 @@ import Searchbar from "./searchBar";
 
 function Navbar() {
     return (
-        <div className="bg-cinzaEscuroTNH1 h-[70px] xl:h-[90px] drop-shadow-4xl backdrop:blur-md fixed top-0 left-0 w-full">
+        <div className="bg-cinzaEscuroTNH1 h-[70px] xl:h-[90px] drop-shadow-4xl backdrop:blur-md fixed top-0 left-0 w-full z-10">
 
             <div className="mx-[20px] xl:mx-[330px] flex justify-between items-center h-full">
                 <svg className=" h-[30px] xl:h-[59px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 457 216">
