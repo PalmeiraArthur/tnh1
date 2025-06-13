@@ -17,6 +17,7 @@ code {
 @tailwind components;
 @tailwind utilities;
 
+
 .transition-all {
     transition-property: all;
     transition-timing-function: linear (0.4, 0, 0.2, 1);

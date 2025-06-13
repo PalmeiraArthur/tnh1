@@ -6,7 +6,7 @@ function MenuDropdown() {
         <Menu>
             {({ open }) => (
                 <>
-                    <MenuButton className="h-[40px] w-[160px] flex flex-row items-center justify-center gap-[5px] bg-cinzaClaroTNH1  rounded font-normal text-[15px] outline-none hover:bg-hover transition-all">
+                    <MenuButton className=" z-50  h-[40px] w-[160px] flex flex-row items-center justify-center gap-[5px] bg-cinzaClaroTNH1  rounded font-normal text-[15px] outline-none hover:bg-hover transition-all">
                         <icons.CategoryIcon></icons.CategoryIcon>
                         Categorias
                         <span
