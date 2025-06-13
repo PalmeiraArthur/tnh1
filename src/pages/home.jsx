@@ -7,6 +7,8 @@ import { TopNoticias } from "../components/topNoticias";
 import AoVivoCard from "../components/aoVivoCard";
 import OuvirCard from "../components/ouvirCard";
 import RedLine from "../components/RedLine";
+import CardExtendido from "../components/cardExtendido";
+import CardReduzido from "../components/cardReduzido";
 
 function Home() {
   const mockNews = [
@@ -50,37 +52,37 @@ function Home() {
   return (
     <div className="flex flex-col justify-center items-center" >
       <Navbar></Navbar>
-       <div className="flex mt-[100px] xl:hidden flex-row gap-[20px]">
+      <div className="flex mt-[100px] xl:hidden flex-row gap-[20px]">
         <AoVivoCard />
         <OuvirCard />
-       </div>
+      </div>
       <div className=" w-max h-full pt-[130px] xl:grid xl:grid-flow-col xl:grid-rows-2 xl:gap-[10px] pb-[20px] ">
-          <CarrosselNoticias></CarrosselNoticias>
+        <CarrosselNoticias></CarrosselNoticias>
 
         <div className="pt-[36px] grid grid-cols-1 xl:grid-cols-3 gap-[20px] w-full max-w-[980px] ">
           <CardNoticia
             title="Noticia"
-            img="https://images.unsplash.com/photo-1749576502454-a0fa6ae62a48?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            img="https://maceioalgovbr.dhost.cloud/uploads/imagens/Caminho-de-Moises-Ponta-Verde-SEMTUR-fotos-Jonathan-Lins-16.jpg"
           />
           <CardNoticia
             title="Noticia"
-            img="https://images.unsplash.com/photo-1749576502454-a0fa6ae62a48?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            img="https://www.viagensecaminhos.com/wp-content/uploads/2023/12/maceio-praia-de-pajucara.jpg"
           />
           <CardNoticia
             title="Noticia"
-            img="https://images.unsplash.com/photo-1749576502454-a0fa6ae62a48?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            img="https://maceioalgovbr.dhost.cloud/uploads/imagens/26-07-23-Ponta-Verde-Maceio-Orla-Praia-SEMTUR-foto-Jonathan-Lins-7.jpg"
           />
           <CardNoticia
             title="Noticia"
-            img="https://images.unsplash.com/photo-1749576502454-a0fa6ae62a48?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            img="https://uploads.grupodicas.com/2025/03/YHXsRMU2-noite-em-maceio-1-1024x576.webp"
           />
           <CardNoticia
             title="Noticia"
-            img="https://images.unsplash.com/photo-1749576502454-a0fa6ae62a48?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            img="https://www.agaxtur.com.br/portals/6/Images/destinos/Maceio.png"
           />
           <CardNoticia
             title="Noticia"
-            img="https://images.unsplash.com/photo-1749576502454-a0fa6ae62a48?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            img="https://i0.wp.com/www.maceioalagoas.com/wp-content/uploads/2022/06/maragogi.jpg?fit=1024%2C575&ssl=1"
           />
         </div>
         <div className="row-span-2 hidden xl:block">
@@ -90,6 +92,40 @@ function Home() {
           </div>
           <TopNoticias news={mockNews} />
         </div>
+      </div>
+
+      <div className="w-full max-w-[1320px] px-4 mx-auto" >
+        <a className="flex flex-row w-full max-w-[1320px] justify-center items-center text-[24px] mb-[20px]">
+          Categorias
+          <RedLine></RedLine>
+        </a>
+        <div className="flex flex-col w-full xl:grid xl:grid-flow-col xl:grid-rows-2 gap-[20px] ">
+          <div className="row-span-3" >
+            <CardExtendido
+              img="https://maceioalgovbr.dhost.cloud/uploads/imagens/26-07-23-Ponta-Verde-Maceio-Orla-Praia-SEMTUR-foto-Jonathan-Lins-7.jpg"></CardExtendido>
+          </div>
+
+
+          <div className="flex flex-col xl:col-span-2  xl:flex-row gap-[20px]">
+            <CardNoticia
+              img="https://www.agaxtur.com.br/portals/6/Images/destinos/Maceio.png">
+            </CardNoticia>
+
+            <CardNoticia
+              img="https://www.agaxtur.com.br/portals/6/Images/destinos/Maceio.png"></CardNoticia>
+          </div>
+
+          <div className="flex flex-col xl:flex-row gap-[20px]">
+            <CardReduzido
+              img="https://uploads.grupodicas.com/2025/03/YHXsRMU2-noite-em-maceio-1-1024x576.webp">
+            </CardReduzido>
+
+            <CardReduzido
+              img="https://uploads.grupodicas.com/2025/03/YHXsRMU2-noite-em-maceio-1-1024x576.webp">
+            </CardReduzido>
+          </div>
+        </div>
+
       </div>
 
       <Footer></Footer>
