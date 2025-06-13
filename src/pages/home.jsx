@@ -4,6 +4,9 @@ import Footer from "../components/footer";
 import CardNoticia from "../components/cardNoticia";
 import CarrosselNoticias from "../components/carrosselNoticias";
 import { TopNoticias } from "../components/topNoticias";
+import AoVivoCard from "../components/aoVivoCard";
+import OuvirCard from "../components/ouvirCard";
+import RedLine from "../components/RedLine";
 
 function Home() {
   const mockNews = [
@@ -79,8 +82,16 @@ function Home() {
           />
         </div>
         <div className="row-span-2">
+          <div className="flex flex-row gap-3 justify-center">
+            <AoVivoCard />
+            <OuvirCard />
+          </div>
           <TopNoticias news={mockNews} />
         </div>
+      </div>
+      
+      <div>
+        <h2>Colunistas <RedLine /></h2>
       </div>
 
       <Footer></Footer>
