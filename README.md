@@ -24,5 +24,5 @@ Criar uma nova interface para o portal de notícias TNH1, com foco em:
 1. **Clone o repositório:**
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-cd nome-do-repositorio
+git clone https://github.com/PalmeiraArthur/tnh1.git
+cd tnh1
