@@ -16,7 +16,6 @@ Criar uma nova interface para o portal de notícias TNH1, com foco em:
 - Layout mais limpo e moderno
 - Componentes reutilizáveis e organizados
 - Acesso rápido às notícias mais lidas
-- Melhor responsividade para dispositivos móveis
 - Melhor experiência de navegação para o usuário
 
 ## 📷 Imagens
